@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PRINT USR 0</title>
+                  
+        <script src="jdataview.js"></script>
+        <script src="jsspeccy-core.min.js"></script>
+
+        <script>
+            function go() {
+                var jsspeccy = JSSpeccy('speccy', {
+                    'autostart': true,
+                    'audio': false,
+                    'scaleFactor': 3.2
+                });
+                jsspeccy.setModel(JSSpeccy.Spectrum.MODEL_48K);
+            }
+        </script>
+    </head>
+    <body onload="go()">
+        <div id="speccy"></div>
+        <img src="keyboard.jpg"></img>
+    </body>
+</html>
+
+
